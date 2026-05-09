@@ -30,7 +30,7 @@ export default function Home() {
         <div className="container meta-bar-inner">
           <span className="mono">
             <span className="meta-dot" />
-            v1.6 · Android
+            v1.7.0 · Android
           </span>
           <div className="meta-right">
             <a href="#features">Features</a>
@@ -486,7 +486,7 @@ export default function Home() {
             </div>
           </div>
           <div className="footer-base">
-            <span className="copyright">© 2025 Dallyst</span>
+            <span className="copyright">© 2026 Dallyst</span>
             <span className="made">Made for Android · Coming to iOS</span>
           </div>
         </footer>
