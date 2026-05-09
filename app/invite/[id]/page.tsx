@@ -4,6 +4,27 @@ import Image from "next/image";
 
 export const dynamic = "force-dynamic";
 
+const ICON_EMOJI: Record<string, string> = {
+  "cart-outline": "🛒",
+  "home-outline": "🏠",
+  "briefcase-outline": "💼",
+  "school-outline": "🎓",
+  dumbbell: "🏋️",
+  airplane: "✈️",
+  "food-fork-drink": "🍽️",
+  "currency-usd": "💵",
+  "heart-outline": "❤️",
+  pill: "💊",
+  "baby-carriage": "👶",
+  paw: "🐾",
+  "gift-outline": "🎁",
+  "map-marker-outline": "📍",
+  "coffee-outline": "☕",
+  tools: "🔧",
+  "star-outline": "⭐",
+  bike: "🚲",
+};
+
 const PLAY_STORE_URL =
   "https://play.google.com/store/apps/details?id=com.martinkutzner.cotask";
 const APP_SCHEME = "dallyst://invite/";
@@ -59,7 +80,7 @@ export default async function InvitePage({ params }: Props) {
           className="w-20 h-20 rounded-2xl flex items-center justify-center text-4xl"
           style={{ backgroundColor: "rgba(237,84,31,0.18)" }}
         >
-          {invitation.listIcon}
+          {ICON_EMOJI[invitation.listIcon] ?? "📋"}
         </div>
 
         {/* Text */}
