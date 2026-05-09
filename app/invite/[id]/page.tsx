@@ -1,6 +1,8 @@
 import { getInvitation } from "@/lib/invitations";
 import { notFound } from "next/navigation";
 
+export const dynamic = "force-dynamic";
+
 const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.martinkutzner.cotask";
 const APP_SCHEME = "dallyst://invite/";
 
