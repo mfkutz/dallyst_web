@@ -515,6 +515,9 @@ export default function Home() {
                 <li>
                   <a href="/terms">Terms</a>
                 </li>
+                <li>
+                  <a href="/delete-account">Delete Account</a>
+                </li>
               </ul>
             </div>
             <div className="footer-col">
