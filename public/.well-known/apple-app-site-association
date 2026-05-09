@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "REEMPLAZAR_CON_TEAM_ID.com.martinkutzner.cotask",
+        "paths": ["/invite/*"]
+      }
+    ]
+  }
+}
