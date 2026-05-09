@@ -158,7 +158,7 @@ export default function Home() {
                 <div className="app-hero-bg">
                   <div className="app-greeting">Good evening</div>
                   <div className="app-username-row">
-                    <span className="app-username">Martin Kutzner</span>
+                    <span className="app-username">Alex Johnson</span>
                     <div className="app-gear">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <circle cx="12" cy="12" r="3"/>
