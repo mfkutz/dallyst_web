@@ -129,102 +129,143 @@ export default function Home() {
               <div className="phone-screen">
                 <div className="phone-notch" />
 
-                <div className="status-bar">
-                  <span>9:41</span>
-                  <div className="status-icons">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M2 22h2v-4H2v4zm4 0h2V14H6v8zm4 0h2v-12h-2v12zm4 0h2V6h-2v16zm4 0h2V2h-2v20z" />
+                {/* Status bar */}
+                <div className="app-status-bar">
+                  <span>7:57</span>
+                  <div className="app-status-icons">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 18h2v-6H0v6zm4 0h2V9H4v9zm4 0h2V3H8v15zm4 0h2V0h-2v18z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C17.93 2.93 6.07 2.93 2 9zm8 8l2 2 2-2c-1.1-1.1-2.9-1.1-4 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C16.69 9.31 7.31 9.31 6 13z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="7" width="20" height="11" rx="2" ry="2"/><path d="M22 11V13"/></svg>
+                  </div>
+                </div>
+
+                {/* Top bar: Dallyst + Premium + Bell */}
+                <div className="app-top-bar">
+                  <div className="app-top-left">
+                    <span className="app-name-pill">Dallyst</span>
+                    <span className="app-premium-badge">⚡ Premium</span>
+                  </div>
+                  <div className="app-bell">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
                     </svg>
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M2 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C17.93 2.93 6.07 2.93 2 9zm8 8l2 2 2-2c-1.1-1.1-2.9-1.1-4 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C16.69 9.31 7.31 9.31 6 13z" />
-                    </svg>
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.34C7 21.4 7.6 22 8.33 22h7.34c.74 0 1.33-.59 1.33-1.33V5.33C17 4.6 16.4 4 15.67 4z" />
-                    </svg>
+                    <span className="app-bell-badge">2</span>
                   </div>
                 </div>
 
-                <div className="app-header">
-                  <div className="h-left">
-                    <span className="h-meta">Shared with 3</span>
-                    <h2>Groceries</h2>
-                  </div>
-                  <div className="avatars">
-                    <div className="avatar">M</div>
-                    <div className="avatar">J</div>
-                    <div className="avatar">A</div>
-                  </div>
-                </div>
-
-                <div className="list-tabs">
-                  <div className="list-tab active">Groceries</div>
-                  <div className="list-tab">Lisbon trip</div>
-                  <div className="list-tab">House</div>
-                </div>
-
-                <div className="list-section-label">
-                  <span>To buy · 4</span>
-                  <span>Today</span>
-                </div>
-
-                <div className="list-items">
-                  <div className="list-item">
-                    <div className="check" />
-                    <span className="list-item-text">
-                      Olive oil — the good one
-                      <small>Mira added a note</small>
-                    </span>
-                    <span className="list-item-meta you">You</span>
-                  </div>
-                  <div className="list-item">
-                    <div className="check" />
-                    <span className="list-item-text">
-                      Tomatoes, basil, mozzarella
-                    </span>
-                    <span className="list-item-meta">Mira</span>
-                  </div>
-                  <div className="list-item">
-                    <div className="check" />
-                    <span className="list-item-text">Coffee beans</span>
-                    <span className="list-item-meta">Jordan</span>
-                  </div>
-                  <div className="list-item">
-                    <div className="check" />
-                    <span className="list-item-text">Lemons (3)</span>
-                    <span className="list-item-meta you">You</span>
-                  </div>
-                  <div className="list-item done">
-                    <div className="check done">
-                      <CheckIcon />
+                {/* Greeting + name */}
+                <div className="app-hero-bg">
+                  <div className="app-greeting">Good evening</div>
+                  <div className="app-username-row">
+                    <span className="app-username">Martin Kutzner</span>
+                    <div className="app-gear">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                      </svg>
                     </div>
-                    <span className="list-item-text">Sourdough loaf</span>
-                    <span className="list-item-meta">Mira</span>
-                  </div>
-                  <div className="list-item done">
-                    <div className="check done">
-                      <CheckIcon />
-                    </div>
-                    <span className="list-item-text">Eggs</span>
-                    <span className="list-item-meta">Avi</span>
                   </div>
                 </div>
 
-                <div className="add-bar">
-                  <div className="plus">+</div>
-                  <span>Add an item…</span>
-                  <span className="send">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <line x1="22" y1="2" x2="11" y2="13" />
-                      <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                    </svg>
-                  </span>
+                {/* Stats cards */}
+                <div className="app-stats">
+                  <div className="app-stat-card">
+                    <div className="app-stat-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="2" y="3" width="20" height="4" rx="1"/><rect x="2" y="10" width="20" height="4" rx="1"/><rect x="2" y="17" width="20" height="4" rx="1"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="app-stat-num">11</div>
+                      <div className="app-stat-label">Lists</div>
+                    </div>
+                  </div>
+                  <div className="app-stat-card">
+                    <div className="app-stat-icon grey">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="app-stat-num">0</div>
+                      <div className="app-stat-label">Invitations</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Recent lists */}
+                <div className="app-section-title">Recent lists</div>
+                <div className="app-list-items">
+                  <div className="app-list-item">
+                    <div className="app-list-item-top">
+                      <div className="app-list-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+                      </div>
+                      <div className="app-list-info">
+                        <div className="app-list-name">Groceries</div>
+                        <div className="app-list-sub">2 members · 3 pending</div>
+                      </div>
+                      <div className="app-list-menu">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
+                      </div>
+                    </div>
+                    <div className="app-progress-row">
+                      <div className="app-progress-bar"><div className="app-progress-fill" style={{width:"55%"}}/></div>
+                      <span className="app-progress-count">5/9</span>
+                    </div>
+                  </div>
+
+                  <div className="app-list-item">
+                    <div className="app-list-item-top">
+                      <div className="app-list-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                      </div>
+                      <div className="app-list-info">
+                        <div className="app-list-name">Lisbon trip</div>
+                        <div className="app-list-sub">1 member · 4 pending</div>
+                      </div>
+                      <div className="app-list-menu">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
+                      </div>
+                    </div>
+                    <div className="app-progress-row">
+                      <div className="app-progress-bar"><div className="app-progress-fill" style={{width:"0%"}}/></div>
+                      <span className="app-progress-count">0/4</span>
+                    </div>
+                  </div>
+
+                  <div className="app-list-item">
+                    <div className="app-list-item-top">
+                      <div className="app-list-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="4" rx="1"/><rect x="2" y="10" width="20" height="4" rx="1"/><rect x="2" y="17" width="20" height="4" rx="1"/></svg>
+                      </div>
+                      <div className="app-list-info">
+                        <div className="app-list-name">Weekly chores</div>
+                        <div className="app-list-sub">1 member · 6 pending</div>
+                      </div>
+                      <div className="app-list-menu">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="12" cy="19" r="1.5"/></svg>
+                      </div>
+                    </div>
+                    <div className="app-progress-row">
+                      <div className="app-progress-bar"><div className="app-progress-fill" style={{width:"0%"}}/></div>
+                      <span className="app-progress-count">0/6</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom nav */}
+                <div className="app-bottom-nav">
+                  <div className="app-nav-item active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                  </div>
+                  <div className="app-nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
+                  <div className="app-nav-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
                 </div>
               </div>
             </div>
