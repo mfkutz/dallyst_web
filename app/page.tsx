@@ -30,7 +30,7 @@ export default function Home() {
         <div className="container meta-bar-inner">
           <span className="mono">
             <span className="meta-dot" />
-            v1.7.0 · Android
+            v1.7.1 · Android
           </span>
           <div className="meta-right">
             <a href="#features">Features</a>
